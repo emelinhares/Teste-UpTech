@@ -1,3 +1,5 @@
+// Faz formatação de numeros para moeda
+
 function mascara(i){
 
     var v = i.value;

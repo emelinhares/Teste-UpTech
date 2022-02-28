@@ -1,3 +1,5 @@
+// exibição da soma dos valores de acordo com a quantidade de produto
+
 var $input_quantidade = document.querySelector("#qt");
 var $output_total = document.querySelector("#total");
 
