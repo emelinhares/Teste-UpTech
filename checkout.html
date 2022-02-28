@@ -1,145 +1,120 @@
-<!-- Título da janela --
-Checkout RCHL Título da página (em destaque) --
-Ótima escolha!
-
- Texto logo abaixo do título da página --
-Obrigado por comprar na RCHLO! Preencha seus dados para efetivar a compra.
-
- Subtítulo, referente ao trecho sobre os dados do produto
-Sua compra
-
- início dos dados do produto -->
-<!-- imagem do produto
-    https://static.riachuelo.com.br/RCHLO/14247984003/portrait/279d0565feb361cff852a6a792ffdb5c89890ba3.jpg
-
-     nome do produto
-    Produto: Camiseta Manga Curta Malha Tie Dye The Simpsons Branco Riachuelo
-
-     cor do produto
-    Cor: Branco
-
-     tamanho do produto
-    Tamanho: G
-
-     preço do produto
-    Preço: R$ 69,90
- fim dos dados do produto
-
- início do formulário
-     Título da seção de dados pessoais do formulário
-    Dados Pessoais
-    Nome completo: colocar campo de texto aqui --
-    Email:  colocar campo de email aqui 
-    CPF:   colocar campo de texto aqui
-     colocar checkbox aqui  Quero receber a newsletter da RCHLO!
-
-     Título da seção de cartão de crédito do formulário--
-    Cartão de crédito
-    Número - CVV:  colocar campo de texto aqui --
-    Bandeira:  colocar campo de seleção com as opções MasterCard, VISA e American Express --
-    Validade:  colocar campo referente ao mês aqui --
-
-     botão de submissão do formulário com o label a seguir -- Confirmar Pedido
- fim do formulário -->
-
-
-<!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 
 <head>
-    <title>Checkout RCHLO</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,inital-scale=1.0">
-    <link rel="shortcut-icon" href="https://midia.fotos-riachuelo.com.br/spa-storefront/public/images/favicon.png">
-    <!-- Compiled and minified CSS -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
-    <link rel="stylesheet" href="public/css/checkout.css">
+    <meta charset="UTF-8">
+    <title>Checkout RCHL</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="/checkout.css" >
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="row">
-        <div class="hide-on-med-and-down title desktop">
-            <h1>Ótima escolha!</h1>
-            <p>Obrigado por comprar na RCHLO! Preencha seus dados para efetivar a compra.</p>
-        </div>
-    </div>
-    <div class="box">
-        <div class="prod-info">
-            <div id="title-box">
-                <h3>Sua compra</h3>
-            </div>
-            <div id="img-shirt">
-                <img src="https://static.riachuelo.com.br/RCHLO/14247984003/portrait/279d0565feb361cff852a6a792ffdb5c89890ba3.jpg"
-                    alt="Camiseta Manga Curta Malha Tie Dye" width="150">
-            </div>
-            <div id="prod-details">
-                <p><b>Produto</b></p>
-                <p>Camiseta Manga Curta Malha Tie Dye The Simpsons Branco Riachuelo</p>
-
-                <p><b>Cor</b></p>
-                <p>Branco</p>
-
-                <p><b>Tamanho</b></p>
-                <p>G</p>
-
-                <p><b>Preço</b></p>
-                <p>R$ 69,90</p>
-            </div>
-        </div>
-
-        <div class="form-cadastro">
-            <form>
-                <h4>Dados Pessoais</h4>
-                <div id="form-name">
-                    <Label for="fname">Nome completo</Label>
-                    <input class="input-cadastro" type="text" id="fname" name="fname" placeholder="Nome Completo">
-                </div>
-                <div id="form-mail">
-                    <Label>Email</Label>
-                    <input type="email" id="fmail" name="fmail" placeholder="email@exemplo.com">
-                </div>
-                <div id="form-doc">
-                    <Label>CPF</Label>
-                    <input type="text" id="fdoc" name="fdoc" placeholder="000.000.000-00">
-                </div>
-                <div id="form-newsletter">
-                    <label>
-                        <input type="checkbox" class="filled-in" id="fnewsletter" name="fnewsletter">
-                        <span>Quero receber a newsletter da RCHLO!</span>
-                    </label>
-                </div>
-            </form>
-        </div>
-
-
-        <div class="form-payment">
-            <form>
-                <h4>Cartão de crédito</h4>
-                <div id="form-card">
-                    <Label for="fcardnumber">Número - CVV</Label>
-                    <input type="text" id="fcardnumber" name="fcardnumber">
-                </div>
-                <div class="form-cardflag">
-                    <label>Bandeira</label>
-                    <select id="fcardflags" name="fcardflags">
-                        <option value="" selected>Selecione uma opção</option>
-                        <option value="Mastercard">Mastercard</option>
-                        <option value="Visa">Visa</option>
-                        <option value="AmericanExpress">American Express</option>
-                    </select>
-                </div>
-                <div class="form-data">
-                    <label>Validade</label>
-                    <input type="month" id="fvalidade" name="fvalidade">
-                </div>
-                <input class="btn-confirm hide-on-med-and-down" type="submit" value="Confirmar pedido">
-            </form>
-        </div>
+    <div class="jumbotron">
+        <div class="container">
+                <h1>Ótima escolha!</h1>
+                <p>Obrigado por comprar na RCHLO! 
+                    Preencha seus dados para efetivar a compra.</p>
+            </div>       
     </div>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">Sua compra</h2>
+                    </div>
+                    <div class="panel-body">
+                        <img src="https://static.riachuelo.com.br/RCHLO/14247984003/portrait/279d0565feb361cff852a6a792ffdb5c89890ba3.jpg"
+                            class="img-thumbnail img-responsive">
+                        <dl>
+                            <dt>Produto</dt>
+                            <dd>Camiseta Manga Curta Malha Tie Dye The Simpsons Branco Riachuelo</dd>
+                            <dt>Cor</dt>
+                            <dd>Branco</dd>
+                            <dt>Tamanho</dt>
+                            <dd>G</dd>
+                            <dt>Preço</dt>
+                            <dd id="preco">R$ 69,90</dd>
+                        </dl>
+                        <div class="form-group">
+                            <label for="qt">Quantidade</label>
+                            <input id="qt" class="form-control" type="number" min="0" max="99" value="1">
+                        </div>
+                        <div class="form-group">
+                            <label for="total">Total</label>
+                            <output for="qt valor" id="total" class="form-control">
+                                69,90
+                            </output>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form class="col-sm-8">
+                <div class="row">
+                    <fieldset class="col-md-6">
+                        <legend>Dados pessoais</legend>
+                        <div class="form-group">
+                            <label for="nome">Nome completo</label>
+                            <input type="text" class="form-control" id="nome" name="nome" maxlength="200" autofocus required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="email@email.com" maxlength="300" required>
+                                <small class="form-text text-muted">Seu e-mail não será compartilhado</small>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cpf">CPF</label>
+                            <input type="text" class="form-control" id="cpf" name="cpf" maxlength="14" placeholder="000.000.000-00"
+                            oninput="mascara(this)" required>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" value="sim" name="spam" checked>
+                                Quero receber a newsletter da RCHLO!
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="col-md-6">
+                        <legend>Cartão de crédito</legend>
+                        <div class="form-group">
+                            <label for="numero-cartao">Número - CVV</label>
+                            <input type="number" class="form-control" id="numero-cartao" name="numero-cartao" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bandeira-cartao">Bandeira</label>
+                            <select name="bandeira-cartao" id="bandeira-cartao" class="form-control">
+                                <option value="master">MasterCard</option>
+                                <option value="visa">VISA</option>
+                                <option value="amex">American Express</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="validade-cartao">Validade</label>
+                            <input type="month" class="form-control" id="validade-cartao" name="validade-cartao"
+                                maxlength="3" required>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <button type="submit" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-thumbs-up"></span>
+                    Confirmar Pedido
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="public/js/validation.js"></script>
+    <script src="public/js/formatadorCpf.js"></script>
+    <script src="public/js/testaConversao.js"></script>
+    <script src="public/js/converteMoeda.js"></script>
+    <script src="public/js/total.js"></script>
 </body>
 
 </html>
-
-<!-- Compiled and minified JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
