@@ -1,5 +1,5 @@
 .box {
-  padding: 50px;
+  padding: 2%;
 }
 
 .title {
@@ -10,7 +10,11 @@
 #title-box{
   background-color: #efedf2;
   border-bottom: 1px solid #ccc;
-  padding: 2%;
+  padding: 1%;
+}
+
+#title-box h3{
+  margin-left: 10px;
 }
 
 img {
@@ -26,6 +30,8 @@ img {
 
 .prod-info {
   border: 1px solid #ccc;
+  float: left;
+  width: 20%;
 }
 
 #prod-details {
@@ -42,6 +48,22 @@ label {
   color: #000000;
 }
 
+.form-cadastro {
+  width: 35%;
+  float: left;
+  padding: 10px 15px;
+}
+
+.form-payment{
+  width: 35%;
+  float: left;
+  padding: 10px 15px;
+}
+
+input:focus-visible, 
+select:focus-visible{
+  outline: none;
+}
 
 input[type=text]:not(.browser-default),
 input[type=email]:not(.browser-default),
@@ -49,7 +71,6 @@ input[type=month] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
-  display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
@@ -88,4 +109,23 @@ select {
   color: white;
   border-radius: 10px;
   border: none;
+}
+
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .prod-info {
+    width: 30%;
+    padding: 0;
+  }
+  .form-cadastro, .form-payment {
+    width: 60%;
+  }
+}
+
+
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .prod-info, .form-cadastros, .form-payment {
+    width: 100%;
+  }
 }

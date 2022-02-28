@@ -52,11 +52,11 @@ Sua compra
     <meta name="viewport" content="width=device-width,inital-scale=1.0">
     <link rel="shortcut-icon" href="https://midia.fotos-riachuelo.com.br/spa-storefront/public/images/favicon.png">
     <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
     <link rel="stylesheet" href="public/css/checkout.css">
 </head>
 
-<body>     
+<body>
     <div class="row">
         <div class="hide-on-med-and-down title desktop">
             <h1>Ótima escolha!</h1>
@@ -64,86 +64,77 @@ Sua compra
         </div>
     </div>
     <div class="box">
-    <div class="row">
-        <div class="col s12 l4">
-            <div class="prod-info">
-                <div id="title-box">
-                    <h4>Sua compra</h4>
-                </div>
-                <div id="img-shirt">
-                    <img src="https://static.riachuelo.com.br/RCHLO/14247984003/portrait/279d0565feb361cff852a6a792ffdb5c89890ba3.jpg"
-                        alt="Camiseta Manga Curta Malha Tie Dye" width="150">
-                </div>
-                <div id="prod-details">
-                    <p><b>Produto</b></p>
-                    <p>Camiseta Manga Curta Malha Tie Dye The Simpsons Branco Riachuelo</p>
+        <div class="prod-info">
+            <div id="title-box">
+                <h3>Sua compra</h3>
+            </div>
+            <div id="img-shirt">
+                <img src="https://static.riachuelo.com.br/RCHLO/14247984003/portrait/279d0565feb361cff852a6a792ffdb5c89890ba3.jpg"
+                    alt="Camiseta Manga Curta Malha Tie Dye" width="150">
+            </div>
+            <div id="prod-details">
+                <p><b>Produto</b></p>
+                <p>Camiseta Manga Curta Malha Tie Dye The Simpsons Branco Riachuelo</p>
 
-                    <p><b>Cor</b></p>
-                    <p>Branco</p>
+                <p><b>Cor</b></p>
+                <p>Branco</p>
 
-                    <p><b>Tamanho</b></p>
-                    <p>G</p>
+                <p><b>Tamanho</b></p>
+                <p>G</p>
 
-                    <p><b>Preço</b></p>
-                    <p>R$ 69,90</p>
-                </div>
+                <p><b>Preço</b></p>
+                <p>R$ 69,90</p>
             </div>
         </div>
 
-        <div class="col s12 l4">
+        <div class="form-cadastro">
             <form>
-                <div class="form-cadastro">
-                    <h4>Dados Pessoais</h4>
-                    <div id="form-name">
-                        <Label for="fname">Nome completo</Label>
-                        <input class="input-cadastro" type="text" id="fname" name="fname"
-                            placeholder="Nome Completo">
-                    </div>
-                    <div id="form-mail">
-                        <Label>Email</Label>
-                        <input type="email" id="fmail" name="fmail" placeholder="email@exemplo.com">
-                    </div>
-                    <div id="form-doc">
-                        <Label>CPF</Label>
-                        <input type="text" id="fdoc" name="fdoc" placeholder="000.000.000-00">
-                    </div>
-                    <div id="form-newsletter">
-                        <label>
-                            <input type="checkbox" class="filled-in" id="fnewsletter" name="fnewsletter">
-                            <span>Quero receber a newsletter da RCHLO!</span>
-                        </label>
-                    </div>
-                    <input class="btn-confirm hide-on-med-and-down" type="submit" value="Confirmar pedido">
+                <h4>Dados Pessoais</h4>
+                <div id="form-name">
+                    <Label for="fname">Nome completo</Label>
+                    <input class="input-cadastro" type="text" id="fname" name="fname" placeholder="Nome Completo">
+                </div>
+                <div id="form-mail">
+                    <Label>Email</Label>
+                    <input type="email" id="fmail" name="fmail" placeholder="email@exemplo.com">
+                </div>
+                <div id="form-doc">
+                    <Label>CPF</Label>
+                    <input type="text" id="fdoc" name="fdoc" placeholder="000.000.000-00">
+                </div>
+                <div id="form-newsletter">
+                    <label>
+                        <input type="checkbox" class="filled-in" id="fnewsletter" name="fnewsletter">
+                        <span>Quero receber a newsletter da RCHLO!</span>
+                    </label>
                 </div>
             </form>
         </div>
 
-        <div class="col s12 l4">
-            <div class="form-payment">
-                <form>
-                    <h4>Cartão de crédito</h4>
-                    <div id="form-name">
-                        <Label for="fcardnumber">Número - CVV</Label>
-                        <input class="input-cadastro" type="text" id="fcardnumber" name="fcardnumber">
-                    </div>
-                    <div class="form-cardflag">
-                        <label>Bandeira</label>
-                        <select id="fcardflags" name="fcardflags">
-                            <option value="" selected>Selecione uma opção</option>
-                            <option value="Mastercard">Mastercard</option>
-                            <option value="Visa">Visa</option>
-                            <option value="AmericanExpress">American Express</option>
-                        </select>
-                    </div>
-                    <div class="form-data">
-                        <label>Validade</label>
-                        <input type="month" id="fvalidade" name="fvalidade">
-                    </div>
-                    <input class="btn-confirm hide-on-large-only" type="submit" value="Confirmar pedido">
-                </form>
-            </div>
+
+        <div class="form-payment">
+            <form>
+                <h4>Cartão de crédito</h4>
+                <div id="form-card">
+                    <Label for="fcardnumber">Número - CVV</Label>
+                    <input type="text" id="fcardnumber" name="fcardnumber">
+                </div>
+                <div class="form-cardflag">
+                    <label>Bandeira</label>
+                    <select id="fcardflags" name="fcardflags">
+                        <option value="" selected>Selecione uma opção</option>
+                        <option value="Mastercard">Mastercard</option>
+                        <option value="Visa">Visa</option>
+                        <option value="AmericanExpress">American Express</option>
+                    </select>
+                </div>
+                <div class="form-data">
+                    <label>Validade</label>
+                    <input type="month" id="fvalidade" name="fvalidade">
+                </div>
+                <input class="btn-confirm hide-on-med-and-down" type="submit" value="Confirmar pedido">
+            </form>
         </div>
-    </div>
     </div>
 
 </body>
@@ -152,10 +143,3 @@ Sua compra
 
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-<script>
-    var instance = M.FormSelect.getInstance(elem);
-    $(document).ready(function () {
-        $('select').formSelect();
-    });
-</script>
