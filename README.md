@@ -9,4 +9,3 @@ Foram utilizados os seguintes documentos para base de estudo e referência:
 
 https://getbootstrap.com/docs/3.4/css/
 https://stackoverflow.com
-Apostila CAELUM HTML, CSS e Javascript
